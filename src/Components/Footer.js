@@ -2,6 +2,9 @@ import React from "react";
 import "../Styles/Footer.css";
 import SubscribeNewsletter from "./SubscribeNewsletter";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faHeartPulse} from '@fortawesome/free-solid-svg-icons'
+
 
 function Footer() {
   return (
@@ -10,7 +13,7 @@ function Footer() {
         <div className="ft-info">
           <div className="ft-info-p1">
             <p className="ft-title">
-              Health <span className="ft-sign">+</span>
+              Health <span className="ft-sign"><FontAwesomeIcon icon={faHeartPulse}/></span>
             </p>
             <p className="ft-description">
               Talk to online doctors and get medical advice, online

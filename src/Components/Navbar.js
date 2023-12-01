@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faHeartPulse} from '@fortawesome/free-solid-svg-icons'
 import {
   faCommentDots,
   faBars,
@@ -31,7 +32,9 @@ function Navbar() {
     <div className="navbar-section">
       <h1 className="navbar-title">
         <Link to="/">
-          Health <span className="navbar-sign">+</span>
+          <div> 
+          Healthy <span><FontAwesomeIcon icon={faHeartPulse} /></span>
+          </div>
         </Link>
       </h1>
 
